@@ -6,10 +6,11 @@
 * [x] HW03 - Настройка PostgreSQL
 * [x] HW04 - Углубленный анализ производительности. Профилирование. Мониторинг. Оптимизация 
 * [x] HW05 - Углубленное изучение бэкапов и репликации
-* HW09 - PostgreSQL в minikube
+* [x] HW09 - PostgreSQL в minikube
 * [x] HW10 - Разворачиваем и настраиваем БД с большими данными
+* HW12 - Развернуть HA кластер
 * [x] HW14 - Multi master
-* HW15 - Parallel cluster
+* [x] HW15 - Parallel cluster
 
 
 
