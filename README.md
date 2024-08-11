@@ -8,9 +8,10 @@
 * [x] HW05 - Углубленное изучение бэкапов и репликации
 * [x] HW09 - PostgreSQL в minikube
 * [x] HW10 - Разворачиваем и настраиваем БД с большими данными
-* HW12 - Развернуть HA кластер
+* [x] HW12 - Развернуть HA кластер
 * [x] HW14 - Multi master
 * [x] HW15 - Parallel cluster
+* HW19 - PostgreSQL и VKcloud
 
 
 
