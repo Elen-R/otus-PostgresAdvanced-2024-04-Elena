@@ -11,7 +11,7 @@
 * [x] HW12 - Развернуть HA кластер
 * [x] HW14 - Multi master
 * [x] HW15 - Parallel cluster
-* HW19 - PostgreSQL и VKcloud
+* HW19 - PostgreSQL и VK Cloud
 
 
 
