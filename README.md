@@ -13,6 +13,9 @@
 * [x] HW14 - Multi master
 * [x] HW15 - Parallel cluster
 * HW19 - PostgreSQL и VK Cloud
+* HW22 - Managed Service for PostgreSQL в Yandex Cloud
+* Проектная работа: «Сравнение времени выполнения запросов в ClickHouse cluster и PostgreSQL HA cluster при работе с большими объемами данных»
+
 
 
 
