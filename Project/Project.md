@@ -9,7 +9,7 @@
 
 > __Схема Patroni PostgreSQL cluster:__
 
-![Schema_1](/images/p_56_1.JPG)
+![Schema_1](/images/p_96.JPG)
 
 > __Схема ClickHouse cluster:__
 
@@ -330,7 +330,7 @@ SELECT * FROM system.zookeeper WHERE path IN ('/', '/clickhouse')
 
 > _Диаграмма со схемой таблиц, которые использовала для импорта данных в Parquet формате:_
 
-![ClickHouse schema](/images/p_211.JPG)
+![ClickHouse schema](/images/p_95.JPG)
 
 > _Parquet — это бинарный, колоночно-ориентированный формат хранения данных, изначально созданный для экосистемы hadoop._
 
