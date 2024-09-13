@@ -587,20 +587,6 @@ INSERT INTO stackoverflow.posthistory_distr SELECT * FROM s3('https://datasets-d
 ![ClickHouse INSERT1 ](/images/p_30.JPG)
 
 ```
-SELECT COUNT(), shardNum() FROM stackoverflow.postlinks_distr GROUP BY shardNum();
-SELECT COUNT(), shardNum() FROM stackoverflow.posts_distr GROUP BY shardNum();
-SELECT COUNT(), shardNum() FROM stackoverflow.badges_distr GROUP BY shardNum();
-SELECT COUNT(), shardNum() FROM stackoverflow.posthistory_distr GROUP BY shardNum();
-SELECT COUNT(), shardNum() FROM stackoverflow.users_distr GROUP BY shardNum();
-SELECT COUNT(), shardNum() FROM stackoverflow.votes_distr GROUP BY shardNum();
-
-```
-
-![ClickHouse results ](/images/p_24_2.JPG)
-
-![ClickHouse results1 ](/images/p_25_2.JPG)
-
-```
 SELECT
     parts.*,
     columns.compressed_size,
@@ -658,7 +644,7 @@ SELECT CreationDate FROM stackoverflow.users WHERE CreationDate='2023-09-15 20:1
 
 ### 1.4. Экспорт данных из ClickHouse в csv файлы для импорта в PostgreSQL
 
-> _Установила psql tool на сервере haproxy:_
+> _Установила psql tool на сервере haproxy_
 
 ```
 sudo apt-get install -y postgresql-client
