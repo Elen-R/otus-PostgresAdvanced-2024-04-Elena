@@ -656,7 +656,7 @@ SELECT CreationDate FROM stackoverflow.users WHERE CreationDate='2023-09-15 20:1
 
 ![ClickHouse check data ](/images/p_28_2.JPG)
 
-### 1.3. Экспорт данных из ClickHouse в csv файлы для импорта в PostgreSQL
+### 1.4. Экспорт данных из ClickHouse в csv файлы для импорта в PostgreSQL
 
 > _Установила psql tool на сервере haproxy:_
 
@@ -668,18 +668,6 @@ psql --version
 ![psql version](/images/p_33.JPG)
 
 > _Настроила SSH доступ и скопировала файлы для импорта в PostgreSQL на haproxy:_
-
-```
-#на ch1 сгенерировала ключи, так как копировала файлы с ch1 на haproxy
-ssh-keygen -t rsa
-
-#скопировала содержимое pub ключа
-sudo cat /home/elr/.ssh/id_rsa.pub
-
-#на haproxy добавила pub ключ с ch1 и проверила доступ по ssh
-sudo nano /home/elr/.ssh/authorized_keys
-
-```
 
 > _Для импорта данных в ClickHouse использовала dataset в формате parquet, для использования в PostgreSQL аналогичного набора данных, экспортировала данные каждой таблицы в csv файл:_
 
