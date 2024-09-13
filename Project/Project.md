@@ -2,14 +2,14 @@
 
 Для решения задачи в Yandex Cloud развернула:
 * 3 VMs для ETCD
-* 3 VMs для Patroni (PostgreSQL) нод
+* 2 VMs для Patroni (PostgreSQL) нод
 * 1 VM для HAProxy
 * 3 VMs для zookeeper
 * 4 VMs для ClickHouse нод
 
 > __Схема Patroni PostgreSQL cluster:__
 
-![Schema_1](/images/p_56.JPG)
+![Schema_1](/images/p_56_1.JPG)
 
 > __Схема ClickHouse cluster:__
 
@@ -166,7 +166,7 @@ get /Z1-node
 
 ![check zookeeper cluster message](/images/p_09.JPG)
 
-### 1.2. ClickHouse installation (ch1, ch2, ch3: : ubuntu 22.04, vCPU 4, memory 8GB, HDD 200GB)
+### 1.2. ClickHouse installation (ch1, ch2, ch3: ubuntu 22.04, vCPU 4, memory 8GB, HDD 200GB)
 
 > _Обновила индексы пакетов в системе, а также обновила сами пакеты до актуальных на текущий момент версий:_
 
@@ -190,7 +190,7 @@ sudo apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv 8919F6BD2B48D7
 
 ```
 
-> _Далее, добавьте репозиторий в систему:_
+> _Далее, добавила репозиторий в систему:_
 
 ```
 echo "deb https://packages.clickhouse.com/deb stable main" | sudo tee \
@@ -199,7 +199,7 @@ echo "deb https://packages.clickhouse.com/deb stable main" | sudo tee \
 ```
 ![ClickHouse installation](/images/p_11.JPG)
 
-> _И ещё раз запустите обновление индекса пакетов:_
+> _И ещё раз запустила обновление индекса пакетов:_
 
 ```
 sudo apt update
