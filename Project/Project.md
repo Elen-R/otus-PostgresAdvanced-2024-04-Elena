@@ -683,9 +683,10 @@ SELECT * FROM stackoverflow.votes_distr INTO OUTFILE 'votes.csv' FORMAT CSVWithN
 SELECT * FROM stackoverflow.posts_distr INTO OUTFILE 'posts.csv' FORMAT CSVWithNames;
 SELECT * FROM stackoverflow.posthistory_distr INTO OUTFILE 'posthistory.csv' FORMAT CSVWithNames;
 
+```
 > _Скопировала файлы на сервер haproxy (так как кластер Patroni еще не был развернут)_
 
-```
+
 ![Copy result](/images/p_34.JPG)
 
 ## 2. Развертывание Patroni Cluster
