@@ -331,7 +331,7 @@ SELECT * FROM system.zookeeper WHERE path IN ('/', '/clickhouse')
 
 > _Диаграмма со схемой таблиц, которые использовала для импорта данных в Parquet формате:_
 
-![ClickHouse schema](/images/p_95.JPG)
+![ClickHouse schema](/images/p_95.jpg)
 
 > _Parquet — это бинарный, колоночно-ориентированный формат хранения данных, изначально созданный для экосистемы hadoop._
 
