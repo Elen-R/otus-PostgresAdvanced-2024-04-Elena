@@ -644,7 +644,7 @@ SELECT CreationDate FROM stackoverflow.users WHERE CreationDate='2023-09-15 20:1
 
 ### 1.4. Экспорт данных из ClickHouse в csv файлы для импорта в PostgreSQL
 
-> _Установила psql tool на сервере haproxy_
+> _Установила psql tool на сервере haproxy:_
 
 ```
 sudo apt-get install -y postgresql-client
@@ -653,7 +653,7 @@ psql --version
 ```
 ![psql version](/images/p_33.JPG)
 
-> _Настроила SSH доступ и скопировала файлы для импорта в PostgreSQL на haproxy:_
+> _Настроила SSH доступ и скопировала файлы для импорта в PostgreSQL на haproxy_
 
 > _Для импорта данных в ClickHouse использовала dataset в формате parquet, для использования в PostgreSQL аналогичного набора данных, экспортировала данные каждой таблицы в csv файл:_
 
@@ -683,12 +683,7 @@ SELECT * FROM stackoverflow.votes_distr INTO OUTFILE 'votes.csv' FORMAT CSVWithN
 SELECT * FROM stackoverflow.posts_distr INTO OUTFILE 'posts.csv' FORMAT CSVWithNames;
 SELECT * FROM stackoverflow.posthistory_distr INTO OUTFILE 'posthistory.csv' FORMAT CSVWithNames;
 
-#Скопировала файлы на сервер haproxy (так как кластер Patroni еще не был развернут):
-scp /home/elr/badges.csv elr@84.201.149.58:/tmp/
-scp /home/elr/users.csv elr@84.201.149.58:/tmp/
-scp /home/elr/votes.csv elr@84.201.149.58:/tmp/
-scp /home/elr/posts.csv elr@84.201.149.58:/tmp/
-scp /home/elr/posthistory.csv elr@84.201.149.58:/tmp/
+> _Скопировала файлы на сервер haproxy (так как кластер Patroni еще не был развернут)_
 
 ```
 ![Copy result](/images/p_34.JPG)
