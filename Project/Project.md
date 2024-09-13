@@ -7,13 +7,14 @@
 * 3 VMs для zookeeper
 * 4 VMs для ClickHouse нод
 
-> __Схема Patroni PostgreSQL cluster:__
-
-![Schema PG](/images/p_96.JPG)
 
 > __Схема ClickHouse cluster:__
 
 ![Schema_CH](/images/p_01.JPG)
+
+> __Схема Patroni PostgreSQL cluster:__
+
+![SchemaPG](/images/p_96.jpg)
 
 > __Инфраструктура решения:__
 
