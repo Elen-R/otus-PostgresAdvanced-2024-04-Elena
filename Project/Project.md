@@ -9,11 +9,11 @@
 
 > __Схема Patroni PostgreSQL cluster:__
 
-![Schema_1](/images/p_96.JPG)
+![Schema PG](/images/p_96.JPG)
 
 > __Схема ClickHouse cluster:__
 
-![Schema_2](/images/p_01.JPG)
+![Schema_CH](/images/p_01.JPG)
 
 > __Инфраструктура решения:__
 
