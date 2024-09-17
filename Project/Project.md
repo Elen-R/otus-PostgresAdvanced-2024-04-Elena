@@ -1349,7 +1349,7 @@ Shard 02 расположен на нодах ch3 и ch4, между ними и
 
 ```
 
-![Solution schema](/images/p_94.JPG)
+![Solution schema](/images/p_97.JPG)
 
 ### 3.1. SELECT - запросы 
 
